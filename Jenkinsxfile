@@ -3,10 +3,10 @@ pipeline {
     label "jenkins-maven"
   }
   environment {
-    ORG = 'dukecon-jx'
+    ORG = 'dukecon'
     APP_NAME = 'dukecon-admin'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY_ORG = 'jxtest-199909'
+    DOCKER_REGISTRY_ORG = 'dukecon'
   }
   stages {
     stage('CI Build and push snapshot') {

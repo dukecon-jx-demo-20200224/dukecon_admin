@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: jxtest-199909/dukecon-admin
+  - image: dukecon/dukecon-admin
     context: target/docker-build
     docker: {}
   tagPolicy:
